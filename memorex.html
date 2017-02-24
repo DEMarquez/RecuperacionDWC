@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Juego de las parejas</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="script.js"></script>
+
+  </head>
+  <body>
+    <form>
+
+      <div id="caja">
+        <input type="button" value="Cargar" onclick="cargaAleatoria();"/>
+        <input type="button" value="Limpiar" onclick="limpiar();"/>
+        <span>Aciertos: <input type="text" class="puntuacion"  id="puntos" value="0"/></span>
+        <span>Errores: <input type="text"  class="puntuacion" id="fallos" value="0"/></span>
+      </div>
+
+      <table border="3">
+        <tr>
+          <td><img src="imagenes/0.jpg" id="1" onclick="evento('1');"></td>
+          <td><img src="imagenes/0.jpg" id="2" onclick="evento('2');"></td>
+          <td><img src="imagenes/0.jpg" id="3" onclick="evento('3');"></td>
+          <td><img src="imagenes/0.jpg" id="4" onclick="evento('4');"></td>
+        </tr>
+        <tr>
+          <td><img src="imagenes/0.jpg" id="5" onclick="evento('5');"></td>
+          <td><img src="imagenes/0.jpg" id="6" onclick="evento('6');"></td>
+          <td><img src="imagenes/0.jpg" id="7" onclick="evento('7');"></td>
+          <td><img src="imagenes/0.jpg" id="8" onclick="evento('8');"></td>
+        </tr>
+        <tr>
+          <td><img src="imagenes/0.jpg" id="9" onclick="evento('9');"></td>
+          <td><img src="imagenes/0.jpg" id="10" onclick="evento('10');"></td>
+          <td><img src="imagenes/0.jpg" id="11" onclick="evento('11');"></td>
+          <td><img src="imagenes/0.jpg" id="12" onclick="evento('12');"></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
